@@ -1,0 +1,21 @@
+{
+  "name": "response-timer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "game": "concurrently \"vite build --watch\" \"vite preview\""
+  },
+  "dependencies": {
+    "@wxcc-desktop/sdk": "^2.0.3",
+    "concurrently": "^9.1.0",
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^6.0.0"
+  }
+}
