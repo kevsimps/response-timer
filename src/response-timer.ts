@@ -13,7 +13,7 @@ export class ResponseTimer extends LitElement {
     ];
     @property({ type: Object }) contactInfo? = {}
     @property({ type: Object }) timers: Map<string, any> = new Map()
-    @property() webhook?: string = "https://hooks.us.webexconnect.io/events/617UH3Y0DS"
+    @property() webhook?: string
     @property({ type: Number }) timer = 10
     @property() token?: string    //$STORE.auth.accessToken
     ibMessage = new BroadcastChannel('onMessageReceived')
